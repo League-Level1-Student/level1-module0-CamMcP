@@ -33,9 +33,12 @@ public class Houses {
 	void house(int height, Color color) {
 		rob.setPenColor(color);
 		rob.move(height);
-		rob.turn(90);
-		rob.move(50);
-		rob.turn(90);
+		if (height == 250) {
+		peakedhouse();	
+		}
+		else {
+			roof();
+		}
 		rob.move(height);
 		rob.setPenColor(new Color(2, 142, 0));
 		rob.turn(-90);
@@ -56,6 +59,20 @@ public class Houses {
 			house(250, color);
 		}
 	}
+	void peakedhouse() {
+		rob.turn(45);
+		rob.move(25);
+		rob.turn(90);
+		rob.move(25);
+		rob.turn(45);	
 	}
+	void roof() {
+	rob.turn(90);
+	rob.move(50);
+	rob.turn(90);
+	}
+	}
+	
+	
 	
 
