@@ -42,7 +42,7 @@ public class BodyPartQuiz {
 
 		// 3. Change the size of the window so that you can only see part of the
 		// image.
-		window.setSize(500, 500);
+		window.setSize(100, 125);
 
 		showNextImage();
 
@@ -51,7 +51,7 @@ public class BodyPartQuiz {
 	private void startQuiz() {
 
 		// 1. Make an int variable to hold the score.
-
+int score = new Integer(0);
 		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
@@ -59,16 +59,54 @@ public class BodyPartQuiz {
 
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
-
+if (guess.equals("Arnold")) {
+	JOptionPane.showMessageDialog(null, "Your are winner of point 1");
+	score = score + 1;
+}
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
-
+else {
+	JOptionPane.showMessageDialog(null, "Your no win of point 1" + "                                                                                                                                                                                The name is Arnold");
+}
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
+String answer = JOptionPane.showInputDialog("who is this?");
+if (answer.equals("Leonardo") && score == 1) {
+	JOptionPane.showMessageDialog(null, "You're are winner of point 2");
+	score = score + 1;
+}
 
-		// 9. Show them their current score
+else if (answer.equals("Leonardo") && score == 0) {
+	JOptionPane.showMessageDialog(null, "Your are winner of point 1");
+}
+
+else if (!(answer.equals("Leonardo")) && score == 1) {
+	JOptionPane.showMessageDialog(null, "You're are no winner of point 2" + "                                                                                                                                                                       The name is Leonardo");
+}
+else {
+	JOptionPane.showMessageDialog(null, "You're are no winner of point 1" + "                                                                                                                                                                       The name is Leonardo");
+}
+showNextImage();
+String gus = JOptionPane.showInputDialog("who is this");
+//this person is Morgan
+if (gus.equals("Morgan") && score == 2) {
+	JOptionPane.showMessageDialog(null, "You're is are deserving of a pont 3");
+	score = score + 1; 
+}
+else if (gus.equals("Morgan") && score  == 1) {
+	JOptionPane.showMessageDialog(null, "You're are winner of point 2");
+	score = score + 1;
+}
+else if (gus.equals("Morgan") && score  == 0) {
+	JOptionPane.showMessageDialog(null, "Your are winner of point 1");
+	score = score +  1;
+}
+else if (!(gus.equals("Morgan")) && score == 2) {
+	JOptionPane.showMessageDialog(null, "You're is are not deserving of pont 3" + "                                                                                                                                                                 The name is Morgan");
+}
+// 9. Show them their current score
 
 	}
 
