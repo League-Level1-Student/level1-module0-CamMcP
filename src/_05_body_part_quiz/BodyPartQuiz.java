@@ -86,7 +86,7 @@ else if (!(answer.equals("Leonardo")) && score == 1) {
 	JOptionPane.showMessageDialog(null, "You're are no winner of point 2" + "                                                                                                                                                                       The name is Leonardo");
 }
 else {
-	JOptionPane.showMessageDialog(null, "You're are no winner of point 1" + "                                                                                                                                                                       The name is Leonardo");
+	JOptionPane.showMessageDialog(null, "Your no win of point 1" + "                                                                                                                                                                       The name is Leonardo");
 }
 showNextImage();
 String gus = JOptionPane.showInputDialog("who is this");
@@ -106,8 +106,42 @@ else if (gus.equals("Morgan") && score  == 0) {
 else if (!(gus.equals("Morgan")) && score == 2) {
 	JOptionPane.showMessageDialog(null, "You're is are not deserving of pont 3" + "                                                                                                                                                                 The name is Morgan");
 }
-// 9. Show them their current score
+else if (!(gus.equals("Morgan")) && score == 1) {
+	JOptionPane.showMessageDialog(null, "You're are not deserving of point 2" + "                                                                                                                                                                 The name is Morgan");
+}
+else {
+	JOptionPane.showMessageDialog(null, "Your no win of point 1");
+}
+showNextImage();
+String gu = JOptionPane.showInputDialog("Last question! Who is this?");
+//this is jack
+if (gu.equals("Jack") && score == 3){
+	JOptionPane.showMessageDialog(null, "Congration, you done it. You got the all qs correct");
+	}
+else if (gu.equals("Jack") && score == 2){
+	JOptionPane.showMessageDialog(null, "Congration, you done it. You got 3 the qs correct");
+	}
+else if (gu.equals("Jack") && score == 1){
+	JOptionPane.showMessageDialog(null, "Congration, you done it. You got 2 pont");
+	}
+else if (gu.equals("Jack") && score == 0){
+	JOptionPane.showMessageDialog(null, "Congration, you got 1 pont");
+	}
+else if (!(gu.equals("Jack")) && score == 3) {
+	JOptionPane.showMessageDialog(null, "You finsh with 3 pont");
+}
+else if (!(gu.equals("Jack")) && score == 2) {
+	JOptionPane.showMessageDialog(null, "You got 2 pont tutal");
+}
+else if (!(gu.equals("Jack")) && score == 1) {
+	JOptionPane.showMessageDialog(null, "One pont. You is are not gud");
+}
+else {
+	JOptionPane.showMessageDialog(null, "You are trash! Hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha");
+}
 
+// 9. Show them their current score
+JOptionPane.showMessageDialog(null, score);
 	}
 
 	public void showNextImage() {
