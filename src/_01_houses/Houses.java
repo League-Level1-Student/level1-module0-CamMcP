@@ -28,6 +28,7 @@ public class Houses {
 			else {
 				house("large", Color.GRAY);
 			}
+			
 		}
 		}
 	void house(int height, Color color) {
